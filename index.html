@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <section class="hero">
+            <div class="inner">
+                <div class="clipper">
+                    <h1>Go Musician</h1>
+                </div>
+
+                <div class="anim-panel">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga.</p>
+                    <a href="#" class="read-btn primary">GET FAMOUS</a>
+                </div>
+            </div>
+        </section>
+        <section class="sidebar">
+            <div class="inner">
+                <div class="clipper">
+                    <h2>Featured</h2>
+                </div>
+                <div class="anim-panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga.</p>
+                        <a href="#" class="read-btn">Read more</a>
+                </div>
+            </div>
+        </section>
+        <section class="suscribe">
+            <div class="inner">
+                <div class="clipper">
+                    <h2>Suscribe</h2>
+                </div>
+                <div class="anim-panel">
+                    <p>Get the latest updates about this website and stuff.</p>
+                    <input type="text" name="email" placeholder="Email adress">
+                    <button class="cta">Suscribe Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script>
+    
+    var tl = new TimelineMax();
+
+    tl.staggerFrom('section', 2,{
+        opacity: 0,
+        scale: .5,
+        ease: Power2.easeOut
+    }, .15)
+    
+    </script>
+
+</body>
+</html>
